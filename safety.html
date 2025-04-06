@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Tips - DisasterPrep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <?php include 'includes/header.php'; ?>
+    <main class="flex-grow p-4 mt-16">
+        <h2 class="text-2xl font-bold text-center mb-6">Safety Tips</h2>
+        <div class="max-w-6xl mx-auto space-y-4">
+            <div class="safety-tip bg-white p-4 rounded-lg shadow-lg cursor-pointer">
+                <h3 class="text-xl font-semibold">Earthquake Safety</h3>
+                <p class="tip-content hidden mt-2">Drop, cover, and hold under a sturdy object.</p>
+            </div>
+            <div class="safety-tip bg-white p-4 rounded-lg shadow-lg cursor-pointer">
+                <h3 class="text-xl font-semibold">Flood Safety</h3>
+                <p class="tip-content hidden mt-2">Move to higher ground and avoid walking through floodwaters.</p>
+            </div>
+            <div class="safety-tip bg-white p-4 rounded-lg shadow-lg cursor-pointer">
+                <h3 class="text-xl font-semibold">Fire Safety</h3>
+                <p class="tip-content hidden mt-2">Stay low to avoid smoke and have an escape plan.</p>
+            </div>
+        </div>
+    </main>
+    <?php include 'includes/footer.php'; ?>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
