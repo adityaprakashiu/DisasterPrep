@@ -80,62 +80,62 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             opacity: 0.98;
         }
 
-        /* Form Styling with rgba(37, 70, 85, 1) */
+        
         .form-container {
-            background: rgba(37, 70, 85, 0.95); /* #254655 with slight transparency */
-            border: 2px solid #1e3a47; /* Darker shade for border */
-            box-shadow: 0 6px 20px rgba(37, 70, 85, 0.4); /* Matching shadow glow */
-            color: #ffffff; /* White text */
+            background: rgba(37, 70, 85, 0.95); 
+            border: 2px solid #1e3a47; 
+            box-shadow: 0 6px 20px rgba(37, 70, 85, 0.4);
+            color: #ffffff;
         }
         input, select {
-            background: rgba(255, 255, 255, 0.95); /* Near-solid white inputs */
-            border-color: #a3c1cc; /* Light blue-gray border */
-            color: #1f2937; /* Dark gray text */
+            background: rgba(255, 255, 255, 0.95); 
+            border-color: #a3c1cc;
+            color: #1f2937; 
         }
         input[type="date"], select {
-            color: #1f2937; /* Dark text for visibility */
-            -webkit-appearance: none; /* Remove default styling */
+            color: #1f2937;
+            -webkit-appearance: none; 
             appearance: none;
         }
         input[type="date"]::-webkit-calendar-picker-indicator {
-            filter: invert(0.2); /* Darken calendar icon */
+            filter: invert(0.2);
         }
-        /* Placeholder styling to match DOB */
+ 
         input::placeholder, select:invalid {
-            color: #6b7280; /* Gray-500, visible against white bg */
-            opacity: 1; /* Ensure full opacity */
+            color: #6b7280;
+            opacity: 1; 
         }
         select:invalid {
-            color: #6b7280; /* Match placeholder color when no option selected */
+            color: #6b7280; 
         }
         select option {
-            color: #1f2937; /* Dark text for dropdown options */
-            background: #ffffff; /* White background for options */
+            color: #1f2937; 
+            background: #ffffff; 
         }
         select option[value=""][disabled] {
-            display: none; /* Hide the placeholder option in dropdown */
+            display: none; 
         }
         input:focus, select:focus {
             border-color: #ffffff;
-            box-shadow: 0 0 0 3px rgba(37, 70, 85, 0.6); /* Matching glow */
+            box-shadow: 0 0 0 3px rgba(37, 70, 85, 0.6);
         }
         button {
-            background: linear-gradient(to right, #254655, #1e3a47, #172a33); /* Gradient with #254655 shades */
+            background: linear-gradient(to right, #254655, #1e3a47, #172a33); 
             color: #ffffff;
         }
         button:hover {
-            background: linear-gradient(to right, #1e3a47, #172a33, #101c22); /* Darker shades on hover */
+            background: linear-gradient(to right, #1e3a47, #172a33, #101c22); 
         }
         .error-message {
-            color: #ffccd5; /* Soft red */
+            color: #ffccd5; 
         }
         .success-message {
-            color: #ccffcc; /* Soft green */
+            color: #ccffcc; 
         }
-        .text-gray-400 { /* Secondary text */
-            color: #d1e0e6; /* Light blue-gray */
+        .text-gray-400 { 
+            color: #d1e0e6; 
         }
-        .text-blue-400 { /* Link color */
+        .text-blue-400 { 
             color: #ffffff;
         }
     </style>
